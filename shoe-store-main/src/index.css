@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #09090b; }
+::-webkit-scrollbar-thumb { background: #27272a; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #3f3f46; }
+
+.glow-lime { box-shadow: 0 0 25px -4px rgba(198, 245, 0, 0.35); }
+.glow-lime-sm { box-shadow: 0 0 15px -3px rgba(198, 245, 0, 0.25); }

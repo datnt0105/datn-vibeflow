@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VibeFlow Sneakers - Hệ Thống Bán Giày & POS Đa Kênh</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><path d='M8 12L15 28L22 12' stroke='%23FFFFFF' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/><path d='M14 26C18 31 24 32 30 14' stroke='%23c6f500' stroke-width='4' stroke-linecap='round'/></svg>" />
+
+    <!-- Google Fonts — async để không block render -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,800&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        background: #09090b;
+        color: #f1f5f9;
+        font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+        margin: 0;
+        min-height: 100vh;
+      }
+      ::-webkit-scrollbar { width: 6px; height: 6px; }
+      ::-webkit-scrollbar-track { background: #09090b; }
+      ::-webkit-scrollbar-thumb { background: #27272a; border-radius: 4px; }
+      ::-webkit-scrollbar-thumb:hover { background: #3f3f46; }
+      .glow-lime { box-shadow: 0 0 25px -4px rgba(198, 245, 0, 0.35); }
+      .glow-lime-sm { box-shadow: 0 0 15px -3px rgba(198, 245, 0, 0.25); }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- Fallback: nếu thấy chữ này, React chưa mount -->
+    <script>
+      setTimeout(function() {
+        var root = document.getElementById('root');
+        if (root && root.childElementCount === 0) {
+          root.innerHTML = '<div style="color:red;padding:2rem;font-size:1rem;font-family:monospace">⚠️ React chưa mount được vào #root. Xem Console (F12) để biết lỗi.</div>';
+        }
+      }, 3000);
+    </script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
